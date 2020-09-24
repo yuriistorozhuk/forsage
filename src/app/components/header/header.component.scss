@@ -1,0 +1,42 @@
+@use "sass:map";
+
+@import '../../../styles/colors.scss';
+@import '../../../styles/topography.scss';
+
+.header {
+    &__background {
+        background: linear-gradient(158.62deg, #3C76AB 23.4%, #FFFFFF 86.72%);
+        overflow-x: hidden;
+        height: 500px;
+        z-index: -1;
+    }
+    &__sky1 {
+        top: 95px;
+        right: -144px;
+
+        height: 385px;
+        width: 512px;
+    }
+    &__sky2 {
+        bottom: 0px;
+    }
+    &__plane {
+        top: 160px;
+        right: 50px;
+
+        height: 427px;
+        width: 681px;
+    }
+
+    &__container {
+        padding: 0px 400px 0px 180px;
+    }
+    &__title {
+        color: $color-white;
+        font-size: map.get($font-title, 'font-size');
+        line-height: map.get($font-title, 'line-height');
+
+        margin-bottom: 68px;
+        padding-top: 190px;
+    }
+}

@@ -1,0 +1,57 @@
+@use "sass:map";
+
+@import '../../../styles/colors.scss';
+@import '../../../styles/topography.scss';
+
+:host {
+    display: block;
+    margin-top: 252px;
+}
+
+.section-course {
+    &__container {
+        display: flex;
+    }
+
+    &__left-side {
+        margin: 0px 70px;
+    }
+
+    &__right-side {
+        margin: 0px 180px 0px 60px;
+    }
+
+    &__separator {
+        border: 2px solid $color-red;
+        margin-bottom: 35px;
+        width: 230px;
+    }
+
+    &__sky {
+        background: #3C76AB;
+        top: 165px;
+        z-index: -1;
+    }
+}
+
+.right-side {
+    &__info {
+        color: $color-dark-grey;
+        font-size: map.get($font-large, 'font-size');
+        line-height: map.get($font-large, 'line-height');
+
+        margin-bottom: 68px;
+    }
+    &__subtitle {
+        color: $color-dark-grey;
+        font-size: map.get($font-subtitle, 'font-size');
+        line-height: map.get($font-subtitle, 'line-height');
+
+        margin-bottom: 40px;
+    }
+    &__description {
+        color: $color-grey;
+        font-size: map.get($font-large, 'font-size');
+        line-height: map.get($font-large, 'line-height');
+    }
+}
