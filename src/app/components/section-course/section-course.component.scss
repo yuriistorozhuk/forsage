@@ -11,14 +11,16 @@
 .section-course {
     &__container {
         display: flex;
+
+        .row {
+            padding: 0px 70px;
+        }
     }
 
     &__left-side {
-        margin: 0px 70px;
     }
 
     &__right-side {
-        margin: 0px 180px 0px 60px;
     }
 
     &__separator {

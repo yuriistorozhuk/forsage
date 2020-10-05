@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-section-course',
@@ -7,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SectionCourseComponent implements OnInit {
 
-  public staff: any = {
-    id: 1,
-    name: 'Остапенко Олександр Анатолійович',
-    role: 'Головний льотний інструктор'
-  };
+  @Input() staff: any = null;
+
+  @Input() info: string = null;
+  @Input() subtitle: string = null;
+  @Input() description: string[] = null;
 
   constructor() { }
 
