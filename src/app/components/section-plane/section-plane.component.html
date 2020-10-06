@@ -1,0 +1,17 @@
+<div class="section-plane__container position-relative">
+    <div class="row w-100">
+        <div class="col-9 offset-1">
+            <div class="section-plane__info">{{info}}</div>
+            <div class="category" *ngFor="let category of categories">
+                <div class="category__subtitle">{{category.subtitle}}</div>
+                <div class="section-plane__separator"></div>
+                <div class="course position-relative" *ngFor="let element of category.list">
+                    <div class="course__background position-absolute h-100 w-100"></div>
+                    <div class="course__name">{{element.name}}</div>
+                    <div class="course__duration">{{element.value}}</div>
+                </div>
+                <div class="category__description">{{category.description}}</div>
+            </div>
+        </div>
+    </div>
+</div>

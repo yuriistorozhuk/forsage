@@ -16,6 +16,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SectionCourseComponent } from './components/section-course/section-course.component';
 import { CardComponent } from './components/card/card.component';
+import { SectionPlaneComponent } from './components/section-plane/section-plane.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { CardComponent } from './components/card/card.component';
     P2006tComponent,
     HeaderComponent,
     SectionCourseComponent,
-    CardComponent
+    CardComponent,
+    SectionPlaneComponent
   ],
   imports: [
     BrowserModule,

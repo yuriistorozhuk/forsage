@@ -4,7 +4,7 @@
         <img class="header__sky2 position-absolute mb-n3 w-100" src="./assets/images/003.png" />
     </div>
 </div>
-<img class="header__plane position-absolute" [src]="image" />
+<img *ngIf="image" class="header__plane position-absolute" [src]="image" />
 <div class="row">
     <div class="col-8 offset-1 header__container">
         <div class="header__title">{{title}}</div>

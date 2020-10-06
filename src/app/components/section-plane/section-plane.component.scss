@@ -1,0 +1,83 @@
+@use "sass:map";
+
+@import '../../../styles/colors.scss';
+@import '../../../styles/topography.scss';
+
+:host {
+    display: block;
+    margin-top: 252px;
+}
+
+.section-plane {
+    &__container {
+        display: flex;
+
+        .row {
+            padding: 0px 70px;
+        }
+    }
+
+    &__info {
+        color: $color-dark-grey;
+        font-size: map.get($font-large, 'font-size');
+        line-height: map.get($font-large, 'line-height');
+
+        margin-bottom: 68px;
+    }
+
+    &__separator {
+        border: 2px solid $color-red;
+        margin-bottom: 35px;
+        width: 230px;
+    }
+}
+
+.category {
+    margin-bottom: 68px;
+    &__subtitle {
+        color: $color-dark-grey;
+        font-size: map.get($font-subtitle, 'font-size');
+        line-height: map.get($font-subtitle, 'line-height');
+
+        margin-bottom: 40px;
+    }
+
+    &__description {
+        color: $color-grey;
+
+        font-size: map.get($font-large, 'font-size');
+        font-style: italic;
+        font-weight: 700;
+        line-height: map.get($font-large, 'line-height');
+
+        margin-top: 38px;
+    }
+}
+
+.course {
+    border-bottom: 1px solid $color-grey;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 24px 4px;
+
+    &__background {
+        top: 0px;
+        left: 0px;
+    }
+
+    &__name, &__duration {
+        color: $color-grey;
+        font-size: map.get($font-large, 'font-size');
+        line-height: map.get($font-large, 'line-height');
+    }
+
+    &:nth-child(odd) {
+        .course__background {
+            background: $color-grey;
+            opacity: 0.1;
+            z-index: -1;
+        }
+    }
+}
