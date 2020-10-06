@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class PPLComponent implements OnInit {
 
   public title: string = "Курс підготовки для отримання ліцензії приватного пілота (PPL(A))";
+  public image: string = "./assets/images/plane001.png";
 
   public staff: any = {
     id: 1,

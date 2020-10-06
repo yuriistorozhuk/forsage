@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CPLComponent implements OnInit {
   public title: string = "Курс підготовки для отримання ліцензії комерційного пілота (СPL(A)/IR)";
+  public image: string = "./assets/images/plane002.png";
 
   public staff: any = {
-    id: 1,
+    id: 2,
     name: 'Давидкін Дмитро Володимирович',
     role: 'Керівник з підготовки'
   }
