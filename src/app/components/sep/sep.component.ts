@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SEPComponent implements OnInit {
 
-  public title: string = "Курс підготовки для отримання рейтингу класу SEP (однодвигунний поршневий) або MEP (багатодвигунний поршневий";
+  public title: string = "Курс підготовки для отримання рейтингу класу SEP (однодвигунний поршневий) або MEP (багатодвигунний поршневий)";
   public image: string = null;
 
   public info: string = "Призначенням курсу є підготовка для отримання рейтингу класу SEP (однодвигунний поршневий) або MEP (багатодвигунний поршневий).";
