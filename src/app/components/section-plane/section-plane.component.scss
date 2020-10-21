@@ -3,11 +3,6 @@
 @import '../../../styles/colors.scss';
 @import '../../../styles/topography.scss';
 
-:host {
-    display: block;
-    margin-top: 252px;
-}
-
 .section-plane {
     &__container {
         display: flex;

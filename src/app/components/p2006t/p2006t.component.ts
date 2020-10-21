@@ -9,8 +9,31 @@ export class P2006tComponent implements OnInit {
   public title: string = "Однопілотні багатодвигунні поршневі літаки МЕР(А)";
   public image: string = null;
 
-  public info: string = "";
-  public categories: any[] = [{
+  public tecnamP2006TInfo: string = "";
+  public tecnamP2006T: any[] = [{
+    subtitle: 'Tecnam P2006T:',
+    description: [
+      "Tecnam P2006T — чотиримісний високоплан, з великою комфортною кабіною,  з прибираючимся шасі, оснащений двома поршневими  двигунами внутрішнього згоряння Rotax 912S3 потужністю 100 л.с.",
+      "Маса порожнього літака Tecnam P2006T є найнижчою серед своїх прямих конкурентів, у той час, як корисне навантаження, набагато вище.",
+      "Високий потолок  та швидкість набору висоти виділяють Tecnam P2006T серед своїх конкурентів.",
+      "Літак може керуватися одним або двома пілотами.",
+      "Сучасне обладнання кабіни літака дозволяє виконувати польоти вдень та вночі, в простих та в складних метеоумовах, як за правилами візуальних польотів, так і за правилами польотів за приладами.",
+    ],
+    list: [{
+      name: 'Маса, кг макс злітна'
+    }]
+  }];
+
+  public usageTecnamP2006TInfo: string = "";
+  public usageTecnamP2006T: any[] = [{
+    subtitle: 'Використання Tecnam P2006T:',
+    list: [{
+      name: 'Маса, кг макс злітна'
+    }]
+  }];
+
+  public technicalCharacteristicsInfo: string = "";
+  public technicalCharacteristics: any[] = [{
     subtitle: 'Технічні характеристики',
     list: [{
       name: 'Маса, кг макс злітна',
@@ -84,7 +107,8 @@ export class P2006tComponent implements OnInit {
         value: '35-40 л/г на обидва бака'
       },
     ],
-  }]
+  }];
+
   constructor() {
   }
 
