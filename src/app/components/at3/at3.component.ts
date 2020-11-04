@@ -1,4 +1,4 @@
-﻿import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-at3',
@@ -9,6 +9,48 @@ export class At3Component implements OnInit {
 
   public title: string = "Однопілотні однодвигунні поршневі літаки SEP(A)";
   public image: string = null;
+
+  public at3Info: string = "";
+  public at3: any[] = [{
+    subtitle: 'AERO AT-3 R100',
+    description: [
+      "Багатоцільовий літак, польського виробництва,",
+      "призначений для вирішення широкого кола завдань, таких як:",
+    ],
+    list: [{
+      name: 'навчання пілотів'
+    }, {
+      name: 'навчання техніці спортивного пілотажу, тренування льотного складу'
+    }
+      , {
+      name: 'патрулювання і моніторинг територій і об\'єктів'
+    }
+      , {
+      name: 'огляд лісів і виявлення пожеж'
+    }, {
+      name: 'огляд нафтопроводів і газопроводів'
+    }, {
+      name: 'огляд ліній електропередач'
+    }, {
+      name: 'ведення пошукових робіт'
+    }, {
+      name: 'геологічна розвідка, аерозйомка місцевості'
+    }
+      , {
+      name: 'кригова розвідка'
+    }, {
+      name: 'перевезення пошти, вантажу, багажу'
+    }, {
+      name: 'повітряні прогулянки'
+    }
+      , {
+      name: 'туристичні польоти'
+    }
+      , {
+      name: 'ділові польоти'
+    }
+    ]
+  }];
 
   public info: string = "";
   public categories: any[] = [{
