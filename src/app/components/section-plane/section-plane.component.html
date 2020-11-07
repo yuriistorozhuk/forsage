@@ -10,8 +10,14 @@
                 </div>
                 <div class="course position-relative" *ngFor="let element of category.list">
                     <div class="course__background position-absolute h-100 w-100"></div>
-                    <div class="course__name">{{element.name}}</div>
+                    <div class="course__name d-flex">
+                        <div class="course__checkbox ml-4" *ngIf="element.options?.checkbox"></div>
+                        <span class="ml-4">{{element.name}}</span>
+                    </div>
                     <div class="course__duration">{{element.value}}</div>
+                </div>
+                <div class="category__summary">
+                    <p *ngFor="let p of category.summary">{{p}}</p>
                 </div>
             </div>
         </div>

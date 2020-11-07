@@ -8,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class K10Component implements OnInit {
 
   public title: string = "Однопілотні однодвигунні поршневі літаки SEP(A)";
-  public image: string = null;
+  public image: any = {
+    url: "./assets/images/plane003.png",
+    styles: {
+      right: '76px', top: '476px',
+      height: '280px', width: '796px'
+    }
+  }
 
   public k10Info: string = ""; 
   public k10: any[] = [{

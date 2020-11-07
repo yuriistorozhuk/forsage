@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { MainComponent } from './components/main/main.component';
 import { CourseComponent } from './components/course/course.component';
 import { CPLComponent } from './components/cpl/cpl.component';
+import { EngCPLComponent } from './components/eng-cpl/eng-cpl.component';
 import { PPLComponent } from './components/ppl/ppl.component';
 import { SEPComponent } from './components/sep/sep.component';
 import { IRComponent } from './components/ir/ir.component';
@@ -15,8 +16,11 @@ const routes: Routes = [{
   path: '',
   component: MainComponent
 }, {
-  path: 'cpl',
+  path: 'ukr/cpl',
   component: CPLComponent
+}, {
+  path: 'eng/cpl',
+  component: EngCPLComponent
 }, {
   path: 'ppl',
   component: PPLComponent

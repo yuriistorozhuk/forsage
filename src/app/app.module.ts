@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './components/main/main.component';
 import { CourseComponent } from './components/course/course.component';
 import { CPLComponent } from './components/cpl/cpl.component';
+import { EngCPLComponent } from './components/eng-cpl/eng-cpl.component';
 import { PPLComponent } from './components/ppl/ppl.component';
 import { IRComponent } from './components/ir/ir.component';
 import { SEPComponent } from './components/sep/sep.component';
@@ -24,6 +25,7 @@ import { SectionPlaneComponent } from './components/section-plane/section-plane.
     MainComponent,
     CourseComponent,
     CPLComponent,
+    EngCPLComponent,
     PPLComponent,
     IRComponent,
     SEPComponent,

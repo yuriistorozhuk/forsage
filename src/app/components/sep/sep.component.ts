@@ -26,8 +26,8 @@ export class SEPComponent implements OnInit {
       name: 'Екзаменаційни політ',
       value: '1 година 30 хвилин'
     }],
-    description: ['Розрахунковий час проходження програми один тиждень.']
-  }, ]
+    summary: ['Розрахунковий час проходження програми один тиждень.']
+  }];
 
   public reqSubtitle: string = "";
   public reqs: any[] = [{
@@ -39,8 +39,7 @@ export class SEPComponent implements OnInit {
       { name: 'Діюча ліцензія РРL(А), СРL(А), АТРL(А)' },
       { name: 'Як мінімум 70 годин нальоту в якості командира повітряного судна' },
       { name: 'Як мінімум повна середня освіта' },
-    ],
-     
+    ]
   }];
 
   constructor() { }
