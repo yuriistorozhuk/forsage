@@ -7,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class P2006tComponent implements OnInit {
   public title: string = "Однопілотні багатодвигунні поршневі літаки МЕР(А)";
-  public image: string = null;
-
+  public image: any = {
+    url: "./assets/images/plane004.png",
+    styles: {
+      right: '31px', top: '322px',
+      height: '200px', width: '840px'
+    }
+  }
   public tecnamP2006TInfo: string = "";
   public tecnamP2006T: any[] = [{
     subtitle: 'Tecnam P2006T:',
@@ -32,10 +37,22 @@ export class P2006tComponent implements OnInit {
       "Tecnam P2006T може використовуватись як в приватних, так і в комерційних цілях:"
     ],
     list: [   
-      { name: 'Навчання курсантів льотних шкіл та аероклубів' },
-      { name: 'Перевезення пасажирів' },
-      { name: 'Патрулювання місцевості' },
-      { name: 'Патрулювання місцевості' },
+      {
+        name: 'Навчання курсантів льотних шкіл та аероклубів', options: {
+          checkbox: true
+        } },
+      {
+        name: 'Перевезення пасажирів', options: {
+          checkbox: true
+        } },
+      {
+        name: 'Патрулювання місцевості', options: {
+          checkbox: true
+        } },
+      {
+        name: 'Патрулювання місцевості', options: {
+          checkbox: true
+        } },
      
     ]
   }];

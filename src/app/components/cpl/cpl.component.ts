@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cpl.component.scss']
 })
 export class CPLComponent implements OnInit {
+
   public title: string = "Курс підготовки для отримання ліцензії комерційного пілота (СPL(A)/IR)";
   public image: string = "./assets/images/plane002.png";
 
