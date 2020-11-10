@@ -16,7 +16,7 @@ const routes: Routes = [{
   path: '',
   component: MainComponent
 }, {
-  path: 'ukr/cpl',
+  path: 'cpl',
   component: CPLComponent
 }, {
   path: 'eng/cpl',
