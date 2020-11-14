@@ -8,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class PPLComponent implements OnInit {
 
   public title: string = "Курс підготовки для отримання ліцензії приватного пілота (PPL(A))";
-  public image: string = "./assets/images/plane001.png";
+  public image: any = {
+    url: "./assets/images/plane001.png",
+    styles: {
+      right: '53px', top: '337px',
+      height: '219px', width: '698px',
+      transform: "rotate(-15deg)"
+    }
+  }
+
 
   public staff: any = {
     id: 1,
@@ -24,6 +32,33 @@ export class PPLComponent implements OnInit {
     "Термін навчання становить щонайменше 3 місяці."
   ];
 
+
+  public reqSubtitle: string = "";
+  public reqs: any[] = [{
+    subtitle: 'Вимоги до кандидатів:',
+    list: [
+      {
+        name: 'Вік не менше 16-и років.', options: {
+          checkbox: true
+        }
+      },
+      {
+        name: 'Достатні знання з математики, фізики, української та (або)англійської мови. ', options: {
+          checkbox: true
+        }
+      },
+      {
+        name: 'Підтвердженням може бути атестат про освіту або довідка з навчального закладу, та співбесіда з керівником з підготовки, для визначення рівня знань.', options: {
+          checkbox: true
+        }
+      },
+      {
+        name: 'Стандарт здоров’я – сертифікат 2-го класу. Студент-пілот не виконує самостійні польоти поки не отримає медичний сертифікат.', options: {
+          checkbox: true
+        }
+      }
+    ]
+  }];
   constructor() { }
 
   ngOnInit(): void {
