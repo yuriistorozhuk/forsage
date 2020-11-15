@@ -1,0 +1,25 @@
+@use "sass:map";
+
+.footer {
+    background-color: $color-dark-grey;
+    color: $color-white;
+
+    &__arrow {
+        border-top: 4px solid $color-white;
+        border-left: 4px solid $color-white;
+        border-radius: 4px;
+        cursor: pointer;
+        transform: rotate(45deg);
+        height: 25px;
+        width: 25px;
+    }
+
+    &__rights, &__nav {
+        font-size: map.get($font-small, "font-size");
+        line-height: map.get($font-small, "line-height");
+    }
+
+    &__nav-item {
+        cursor: pointer;
+    }
+}

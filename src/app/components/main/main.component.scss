@@ -1,0 +1,18 @@
+.header {
+    &__background {
+        height: 900px;
+    }
+
+    &__sky2 {
+        bottom: 0px;
+        transform: rotate(180deg);
+    }
+
+    &__plane {
+        transform: rotate(-15.18deg);
+        top: 495px;
+        right: 42px;
+        height: 200.64px;
+        width: 840.79px;
+    }
+}

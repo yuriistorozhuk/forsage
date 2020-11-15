@@ -18,6 +18,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SectionCourseComponent } from './components/section-course/section-course.component';
 import { CardComponent } from './components/card/card.component';
 import { SectionPlaneComponent } from './components/section-plane/section-plane.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { SectionPlaneComponent } from './components/section-plane/section-plane.
     HeaderComponent,
     SectionCourseComponent,
     CardComponent,
-    SectionPlaneComponent
+    SectionPlaneComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
