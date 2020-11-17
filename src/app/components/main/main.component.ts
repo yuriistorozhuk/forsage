@@ -9,7 +9,8 @@ export class MainComponent implements OnInit {
 
   title = 'Льотна школа';
   image = {
-    url: './assets/images/plane004.png'
+    url: './assets/images/plane004.png',
+    styles: {}
   };
 
   constructor() { }
