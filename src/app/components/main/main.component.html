@@ -1,7 +1,24 @@
+<app-navigation></app-navigation>
 <div class="header__background position-absolute w-100">
     <div class="position-relative h-100 w-100">
         <img class="header__sky1 position-absolute h-100 w-100" src="./assets/images/main-header-background.jpeg" />
         <img class="header__sky2 position-absolute w-100" src="./assets/images/main-header-background2.png" />
-        <img class="header__plane position-absolute" src="./assets/images/plane004.png" />
     </div>
 </div>
+<div class="container position-relative">
+    <img *ngIf="image" class="header__plane position-absolute" [ngStyle]="image.styles" [src]="image.url" />
+</div>
+<div class="container header__content">
+    <div class="row">
+        <div class="col-8 offset-1 header__container">
+            <div class="header__title">{{title}}</div>
+        </div>
+        <div class="col-8 offset-1 header__container">
+            <div class="header__forsage">ФОРСАЖ</div>
+        </div>
+        <div class="col-4 offset-1">
+            <button class="btn btn--orange w-100">записатися на курси</button>
+        </div>
+    </div>
+</div>
+<div class="">123</div>

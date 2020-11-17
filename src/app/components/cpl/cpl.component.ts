@@ -11,7 +11,7 @@ export class CPLComponent implements OnInit {
   public image: any = {
     url: "./assets/images/plane005.png",
     styles: {
-      right: '74px', top: '305px',
+      top: '305px',
       height: '243px', width: '652px'
     }
   }

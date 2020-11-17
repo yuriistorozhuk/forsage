@@ -6,15 +6,12 @@
 :host {
     display: block;
     margin-top: 252px;
+    position: relative;
 }
 
 .section-course {
     &__container {
         display: flex;
-
-        .row {
-            padding: 0px 70px;
-        }
     }
 
     &__left-side {
@@ -32,6 +29,7 @@
     &__sky {
         background: #3C76AB;
         top: 165px;
+        left: 0px;
         z-index: -1;
     }
 }

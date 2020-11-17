@@ -1,0 +1,14 @@
+@use "sass:map";
+
+.navigation {
+    z-index: 1000;
+}
+
+.nav-item {
+    color: $color-white;
+    cursor: pointer;
+
+    font-size: map.get($font-small, "font-size");
+    font-weight: bold;
+    line-height: map.get($font-small, "line-height");
+}

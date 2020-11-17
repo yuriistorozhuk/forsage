@@ -19,6 +19,7 @@ import { SectionCourseComponent } from './components/section-course/section-cour
 import { CardComponent } from './components/card/card.component';
 import { SectionPlaneComponent } from './components/section-plane/section-plane.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { FooterComponent } from './components/footer/footer.component';
     SectionCourseComponent,
     CardComponent,
     SectionPlaneComponent,
-    FooterComponent
+    FooterComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,

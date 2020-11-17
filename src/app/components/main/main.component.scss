@@ -1,5 +1,14 @@
+@use "sass:map";
+
+@import '../../../styles/colors.scss';
+@import '../../../styles/topography.scss';
+
 .header {
     &__background {
+        height: 900px;
+    }
+
+    &__content {
         height: 900px;
     }
 
@@ -10,9 +19,34 @@
 
     &__plane {
         transform: rotate(-15.18deg);
-        top: 495px;
-        right: 42px;
+        top: 350px;
+        right: 0px;
         height: 200.64px;
         width: 840.79px;
+        z-index: 10;
+    }
+
+    &__title {
+        color: $color-white;
+        font-size: map.get($font-title, 'font-size');
+        line-height: map.get($font-title, 'line-height');
+
+        letter-spacing: 4px;
+        text-transform: uppercase;
+
+        margin-bottom: 68px;
+        padding-top: 190px;
+    }
+
+    &__forsage {
+        color: $color-white;
+        font-size: 145px;
+        font-weight: 900;
+        line-height: map.get($font-title, 'line-height');
+
+        letter-spacing: 4px;
+        text-transform: uppercase;
+
+        margin-bottom: 68px;
     }
 }

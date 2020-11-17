@@ -11,7 +11,7 @@ export class PPLComponent implements OnInit {
   public image: any = {
     url: "./assets/images/plane001.png",
     styles: {
-      right: '53px', top: '337px',
+      top: '337px',
       height: '219px', width: '698px',
       transform: "rotate(-15deg)"
     }

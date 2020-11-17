@@ -1,15 +1,17 @@
-<div class="section-course__container position-relative">
-    <img class="section-course__sky position-absolute" src="./assets/images/004.png"/>
-    <div class="row">
-        <div class="col-3 section-course__left-side">
-            <app-card [staff]="staff"></app-card>
-        </div>
-        <div class="col-7 offset-1 section-course__right-side">
-            <div class="right-side__info">{{info}}</div>
-            <div class="right-side__subtitle">{{subtitle}}</div>
-            <div class="section-course__separator"></div>
-            <div class="right-side__description">
-                <div *ngFor="let element of description">{{element}}</div>
+<div class="container">
+    <div class="section-course__container">
+        <img class="section-course__sky position-absolute" src="./assets/images/004.png"/>
+        <div class="row">
+            <div class="col-3 section-course__left-side">
+                <app-card [staff]="staff"></app-card>
+            </div>
+            <div class="col-7 offset-1 section-course__right-side">
+                <div class="right-side__info">{{info}}</div>
+                <div class="right-side__subtitle">{{subtitle}}</div>
+                <div class="section-course__separator"></div>
+                <div class="right-side__description">
+                    <div *ngFor="let element of description">{{element}}</div>
+                </div>
             </div>
         </div>
     </div>

@@ -10,8 +10,9 @@ export class P2006tComponent implements OnInit {
   public image: any = {
     url: "./assets/images/plane004.png",
     styles: {
-      right: '31px', top: '322px',
-      height: '200px', width: '840px'
+      top: '322px',
+      height: '200px', width: '840px',
+      transform: "rotate(-20deg)"
     }
   }
   public tecnamP2006TInfo: string = "";

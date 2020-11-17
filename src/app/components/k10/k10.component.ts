@@ -11,7 +11,7 @@ export class K10Component implements OnInit {
   public image: any = {
     url: "./assets/images/plane003.png",
     styles: {
-      right: '76px', top: '476px',
+      top: '476px',
       height: '280px', width: '796px'
     }
   }
