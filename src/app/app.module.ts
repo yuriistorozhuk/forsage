@@ -20,6 +20,8 @@ import { CardComponent } from './components/card/card.component';
 import { SectionPlaneComponent } from './components/section-plane/section-plane.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
+import { MainSectionComponent } from './components/main-section/main-section.component';
+import { PlaneCardComponent } from './components/plane-card/plane-card.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { NavigationComponent } from './components/navigation/navigation.componen
     CardComponent,
     SectionPlaneComponent,
     FooterComponent,
-    NavigationComponent
+    NavigationComponent,
+    MainSectionComponent,
+    PlaneCardComponent
   ],
   imports: [
     BrowserModule,

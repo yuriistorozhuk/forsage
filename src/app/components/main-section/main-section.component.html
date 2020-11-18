@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="main-section__header d-flex flex-column align-items-center">
+        <div class="main-section__title mb-5">{{title}}</div>
+        <div class="main-section__separator mb-5"></div>
+        <div class="main-section__description text-center mb-5">
+            <div class="description__p" *ngFor="let element of description">{{element}}</div>
+        </div>
+    </div>
+    <div class="main-section__content">
+        <ng-content></ng-content>
+    </div>
+</div>

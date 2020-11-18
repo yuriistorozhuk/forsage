@@ -1,0 +1,19 @@
+@use "sass:map";
+
+@import '../../../styles/colors.scss';
+@import '../../../styles/topography.scss';
+
+.main-section {
+    &__title {
+        font-size: map.get($font-title, 'font-size');
+        line-height: map.get($font-title, 'line-height');
+    }
+    &__separator {
+        border: 2px solid $color-red;
+        width: 230px;
+    }
+    &__description {
+        font-size: map.get($font-large, 'font-size');
+        line-height: map.get($font-large, 'line-height');
+    }
+}

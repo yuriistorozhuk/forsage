@@ -21,4 +21,10 @@
         </div>
     </div>
 </div>
-<div class="">123</div>
+<app-main-section [title]="sections[0].title" [description]="sections[0].description">
+    <div class="row mb-3">
+        <div class="col-3" *ngFor="let course of courses">
+            <app-plane-card [title]="course.title" [image]="course.image"></app-plane-card>
+        </div>
+    </div>
+</app-main-section>
