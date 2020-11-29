@@ -1,30 +1,40 @@
 <app-navigation></app-navigation>
 <div class="header__background position-absolute w-100">
-    <div class="position-relative h-100 w-100">
-        <img class="header__sky1 position-absolute h-100 w-100" src="./assets/images/main-header-background.jpeg" />
-        <img class="header__sky2 position-absolute w-100" src="./assets/images/main-header-background2.png" />
-    </div>
+  <div class="position-relative h-100 w-100">
+    <img class="header__sky1 position-absolute h-100 w-100" src="./assets/images/main-header-background.jpeg" />
+    <img class="header__sky2 position-absolute w-100" src="./assets/images/main-header-background2.png" />
+  </div>
 </div>
 <div class="container position-relative">
-    <img *ngIf="image" class="header__plane position-absolute" [ngStyle]="image.styles" [src]="image.url" />
+  <img *ngIf="image" class="header__plane position-absolute" [ngStyle]="image.styles" [src]="image.url" />
 </div>
 <div class="container header__content">
-    <div class="row">
-        <div class="col-8 offset-1 header__container">
-            <div class="header__title">{{title}}</div>
-        </div>
-        <div class="col-8 offset-1 header__container">
-            <div class="header__forsage">ФОРСАЖ</div>
-        </div>
-        <div class="col-4 offset-1">
-            <button class="btn btn--orange w-100">записатися на курси</button>
-        </div>
+  <div class="row">
+    <div class="col-8 offset-1 header__container">
+      <div class="header__title">{{title}}</div>
     </div>
+    <div class="col-8 offset-1 header__container">
+      <div class="header__forsage">ФОРСАЖ</div>
+    </div>
+    <div class="col-4 offset-1">
+      <button class="btn btn--orange w-100">записатися на курси</button>
+    </div>
+  </div>
 </div>
 <app-main-section [title]="sections[0].title" [description]="sections[0].description">
-    <div class="row mb-3">
-        <div class="col-3" *ngFor="let course of courses">
-            <app-plane-card [title]="course.title" [image]="course.image"></app-plane-card>
-        </div>
+  <div class="row mb-3">
+    <div class="col-3" *ngFor="let course of courses">
+      <app-plane-card [title]="course.title" [image]="course.image"></app-plane-card>
     </div>
+  </div>
+  <iframe width="100%" height="500" src="https://www.youtube.com/embed/EKdjVYwk308" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </app-main-section>
+
+<app-main-section [title]="" [description]="fleet[0].description">
+  <div class="row mb-3">
+    <div class="col-4" *ngFor="let aircraft of aircrafts">
+      <app-plane-card [title]="aircraft.title" [image]="aircraft.image"></app-plane-card>
+    </div>
+  </div>
+</app-main-section>
+

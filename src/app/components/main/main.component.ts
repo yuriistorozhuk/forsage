@@ -24,18 +24,34 @@ export class MainComponent implements OnInit {
 
   public courses = [{
     title: 'Курс підготовки для отримання ліцензії приватного пілота (PPL(A))',
-    image: './assets/images/main-plane001.png'
+    image: './assets/images/main-plane001.jpg'
   }, {
-    title: 'Курс підготовки для отримання ліцензії приватного пілота (PPL(A))',
-    image: './assets/images/main-plane001.png'
+    title: 'Курс підготовки для отримання ліцензії комерційного пілота (СPL(A)/IR)',
+    image: './assets/images/main-plane002.jpg'
   }, {
-    title: 'Курс підготовки для отримання ліцензії приватного пілота (PPL(A))',
-    image: './assets/images/main-plane001.png'
+     title: 'Підготовки для отримання рейтингу класу SEP або MEP',
+    image: './assets/images/main-plane003.jpg'
   }, {
-    title: 'Курс підготовки для отримання ліцензії приватного пілота (PPL(A))',
-    image: './assets/images/main-plane001.png'
+      title: 'Підготовки для отримання рейтингу IR (право виконання польотів за приладами)',
+    image: './assets/images/main-plane004.jpg'
   }];
 
+  public fleet = [{
+    title: null,
+    description: ["Повітряний флот АТО ЛЬОТНА ШКОЛА ФОРСАЖ"]
+  }];
+
+  public aircrafts = [{
+    title: 'K-10 SWIFT – український надлегкий літак нового покоління',
+    image: './assets/images/main-plane005.jpg'
+  }, {
+      title: 'Tecnam P2006T – легкий двомоторний цільнометалічний літак',
+    image: './assets/images/main-plane006.jpg'
+  }, {
+      title: 'AT-3 - легкий одномоторний літак, польського виробництва, призначений для вирішення широкого кола завдань',
+    image: './assets/images/main-plane001.jpg'
+  
+  }];
   constructor() { }
 
   ngOnInit(): void {
