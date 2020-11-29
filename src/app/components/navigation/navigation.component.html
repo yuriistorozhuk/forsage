@@ -1,4 +1,4 @@
-<div class="navigation position-absolute w-100 mt-4">
+<div id="navigation" class="navigation position-absolute w-100 mt-4">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -8,13 +8,10 @@
                     </div>
                     <div class="col-10">
                         <div class="nav d-flex align-items-center justify-content-between h-100">
-                            <div class="nav-item">Головна</div>
-                            <div class="nav-item">Наші партнери</div>
-                            <div class="nav-item">Програма навчання</div>
-                            <div class="nav-item">Повітряний флот</div>
-                            <div class="nav-item">Про нас</div>
-                            <div class="nav-item">Стати пілотом</div>
-                            <div class="nav-item">Фотогалерея</div>
+                            <div class="nav-item" (click)="navigation.goTo('/', 'navigation')">Головна</div>
+                            <div class="nav-item" (click)="navigation.goTo('/', 'courses')">Програма навчання</div>
+                            <div class="nav-item" (click)="navigation.goTo('/', 'fleet')">Повітряний флот</div>
+                            <div class="nav-item" (click)="navigation.goTo('/', 'about-us')">Про нас</div>
                         </div>
                     </div>
                 </div>

@@ -22,6 +22,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { MainSectionComponent } from './components/main-section/main-section.component';
 import { PlaneCardComponent } from './components/plane-card/plane-card.component';
+import { NavigationService } from './services/navigation.service';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,7 @@ import { PlaneCardComponent } from './components/plane-card/plane-card.component
     AppRoutingModule,
     NgbModule
   ],
-  providers: [],
+  providers: [NavigationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

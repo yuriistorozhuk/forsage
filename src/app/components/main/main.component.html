@@ -1,3 +1,21 @@
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Наші контакти</h4>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <div class="mb-2">моб.: +380508321003</div>
+        <div class="mb-2">моб.: +380505443574</div>
+        <div class="mb-2">e-mail: sms.forsage@gmail.com</div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn--orange w-100" (click)="modal.close('Close click')">Закрити</button>
+  </div>
+</ng-template>
+
 <app-navigation></app-navigation>
 <div class="header__background position-absolute w-100">
   <div class="position-relative h-100 w-100">
@@ -17,24 +35,31 @@
       <div class="header__forsage">ФОРСАЖ</div>
     </div>
     <div class="col-4 offset-1">
-      <button class="btn btn--orange w-100">записатися на курси</button>
+      <button class="btn btn--orange w-100" (click)="openModal(content)">записатися на курси</button>
     </div>
   </div>
 </div>
-<app-main-section [title]="sections[0].title" [description]="sections[0].description">
+<app-main-section id="courses" [title]="sections[0].title" [description]="sections[0].description">
   <div class="row mb-3">
     <div class="col-3" *ngFor="let course of courses">
-      <app-plane-card [title]="course.title" [image]="course.image"></app-plane-card>
+      <app-plane-card [title]="course.title" [image]="course.image" [link]="course.link"></app-plane-card>
     </div>
   </div>
   <iframe width="100%" height="500" src="https://www.youtube.com/embed/EKdjVYwk308" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </app-main-section>
 
-<app-main-section [title]="" [description]="fleet[0].description">
+<app-main-section id="fleet" [title]="" [description]="fleet[0].description">
   <div class="row mb-3">
     <div class="col-4" *ngFor="let aircraft of aircrafts">
-      <app-plane-card [title]="aircraft.title" [image]="aircraft.image"></app-plane-card>
+      <app-plane-card [title]="aircraft.title" [image]="aircraft.image" [link]="aircraft.link"></app-plane-card>
     </div>
   </div>
 </app-main-section>
 
+<app-main-section id="about-us" [title]="" [description]="['test']">
+  <div class="row mb-3">
+    <div class="col-4" *ngFor="let element of staff">
+      <app-card [staff]="element"></app-card>
+    </div>
+  </div>
+</app-main-section>

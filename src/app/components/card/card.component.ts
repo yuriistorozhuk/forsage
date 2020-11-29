@@ -18,6 +18,7 @@ export class CardComponent implements OnInit {
   ngOnInit(): void {
     const { id, name, role } = this.staff;
 
+    console.log(this.staff);
     this.image = `./assets/images/staff00${id}.png`;
     this.name = name;
     this.role = role;

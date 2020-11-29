@@ -1,3 +1,21 @@
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Наші контакти</h4>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <div class="mb-2">моб.: +380508321003</div>
+        <div class="mb-2">моб.: +380505443574</div>
+        <div class="mb-2">e-mail: sms.forsage@gmail.com</div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn--orange w-100" (click)="modal.close('Close click')">Закрити</button>
+  </div>
+</ng-template>
+
 <app-navigation></app-navigation>
 <div class="header__background position-absolute w-100">
     <div class="position-relative h-100 w-100">
@@ -14,7 +32,7 @@
             <div class="header__title">{{title}}</div>
         </div>
         <div class="col-4 offset-1">
-            <button class="btn btn--orange w-100">записатися на курси</button>
+            <button class="btn btn--orange w-100" (click)="openModal(content)">записатися на курси</button>
         </div>
     </div>
 </div>

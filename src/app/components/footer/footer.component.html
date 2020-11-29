@@ -18,13 +18,10 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="footer__nav d-flex">
-                            <div class="footer__nav-item mr-3">Головна</div>
-                            <div class="footer__nav-item mr-3">Наші партнери</div>
-                            <div class="footer__nav-item mr-3">Програма навчання</div>
-                            <div class="footer__nav-item mr-3">Повітряний флот</div>
-                            <div class="footer__nav-item mr-3">Про нас</div>
-                            <div class="footer__nav-item mr-3">Стати пілотом</div>
-                            <div class="footer__nav-item mr-3">Фотогалерея</div>
+                            <div class="footer__nav-item mr-3" (click)="navigation.goTo('/', 'navigation')">Головна</div>
+                            <div class="footer__nav-item mr-3" (click)="navigation.goTo('/', 'courses')">Програма навчання</div>
+                            <div class="footer__nav-item mr-3" (click)="navigation.goTo('/', 'fleet')">Повітряний флот</div>
+                            <div class="footer__nav-item mr-3" (click)="navigation.goTo('/', 'about-us')">Про нас</div>
                         </div>
                     </div>
                 </div>
