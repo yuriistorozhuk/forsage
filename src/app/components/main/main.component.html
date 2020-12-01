@@ -7,7 +7,7 @@
       <div class="form-group">
         <div class="mb-2">моб.: +380508321003</div>
         <div class="mb-2">моб.: +380505443574</div>
-        <div class="mb-2">e-mail: sms.forsage@gmail.com</div>
+        <div class="mb-2">e-mail: ostapenko2002@yahoo.com</div>
       </div>
     </form>
   </div>
@@ -56,10 +56,15 @@
   </div>
 </app-main-section>
 
-<app-main-section id="about-us" [title]="" [description]="['test']">
+<app-main-section id="about-us" [title]="" [description]="['Особовий склад АТО ЛЬОТНА ШКОЛА ФОРСАЖ']">
   <div class="row mb-3">
     <div class="col-4" *ngFor="let element of staff">
       <app-card [staff]="element"></app-card>
     </div>
   </div>
 </app-main-section>
+
+<app-main-section id="location" [title]="" [description]="location[0].description">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.4398939205093!2d32.260381315893994!3d48.505631433433024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d042a44e3aea09%3A0x89cd1a9e21a1a5fd!2z0LLRg9C70LjRhtGPINCS0LXQu9C40LrQsCDQn9C10YDRgdC_0LXQutGC0LjQstC90LAsIDgyLCDQmtGA0L7Qv9C40LLQvdC40YbRjNC60LjQuSwg0JrRltGA0L7QstC-0LPRgNCw0LTRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgMjUwMDA!5e0!3m2!1suk!2sua!4v1606678720322!5m2!1suk!2sua" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</app-main-section>
+
