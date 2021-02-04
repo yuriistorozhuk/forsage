@@ -3,8 +3,13 @@
 
 body {
     font-family: Montserrat;
+    min-width: 1024px;
 }
 
 .section__list {
     margin-top: 252px;
+}
+
+.container {
+    min-width: 960px !important;
 }
